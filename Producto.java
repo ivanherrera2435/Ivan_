@@ -1,25 +1,29 @@
 public class Producto {
-    String nombre;
-    int precio;
+   String Nombre;
+   double  Precio;
+   int stock;
 
-    public static void main(String[] args) {
-        Producto Producto1 = new Producto(null, 0);
-        Producto1.mostrarDetalles();
-    }
+   Producto(String Nombre,double Precio,int stock){
+    this.Nombre=Nombre;
+    this.Precio=Precio;
 
-    public Producto (String nombre, int precio){
-        this.nombre = nombre;
-        this.precio = precio;
-    }
+   }
+   void MoostrarInfo(){
+    
+   }
+   public static void main(String[] args) {
+    Producto producto = new Producto("Ivan",2000,15);
+     System.out.println("Nombre :"+producto.Nombre);
+     System.out.println("Precio :"+producto.Precio);
+     System.out.println("stock :"+producto.stock);
 
-    public void setDetalles(String nombre, int precio){
-        this.nombre = nombre;
-        this.precio = precio;
-    }
+     producto.MoostrarInfo();
 
-    public void mostrarDetalles(){
-        System.out.println("Nombre: "+ this.nombre);
-        System.out.println("Precio: "+ this.precio);
-    }
 
+   }
+
+   
+
+
+    
 }
