@@ -8,7 +8,7 @@ public class Estudiante {
     }
 
     public Estudiante(){
-        this("Breiner", 19);
+        this("Ivan", 19);
     }
 
     public Estudiante(String nombre, int edad){
