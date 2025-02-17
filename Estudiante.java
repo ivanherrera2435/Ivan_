@@ -1,23 +1,23 @@
 public class Estudiante {
-    String Nombre;
-    int Edad;
-    int Curso;
+    String nombre;
+    int edad;
+
+    public static void main(String[] args) {
+        Estudiante Estudiante1 = new Estudiante();
+        Estudiante1.mostrarDetalles();
+    }
 
     public Estudiante(){
-        this.Nombre="Nombre";
-        this.Edad=0;
-        this.Curso=1;
-
+        this("Breiner", 19);
     }
-    public Estudiante(String Nombre,int Edad){
-        this.Nombre=Nombre;
-        this.Edad=Edad;
 
+    public Estudiante(String nombre, int edad){
+        this.nombre = nombre;
+        this.edad = edad;
     }
-    public Estudiante(String Nombre,int Edad,int Curso){
-        this.Nombre=Nombre;
-        this.Edad=Edad;
-        this.Curso=Curso;
 
-    }
+    public void mostrarDetalles(){
+        System.out.println("Nombre: "+ this.nombre + ", Edad:" + this.edad);
+    }
+
 }
